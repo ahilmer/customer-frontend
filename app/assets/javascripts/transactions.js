@@ -11,7 +11,7 @@ var overview = {
 
 $(document).keypress(function(e){
 
-  console.log(e);
+  console.log(e.keyCode)
   if(e.keyCode == 13)
   {
     console.log(overview)
@@ -62,13 +62,12 @@ $(document).keypress(function(e){
   else if(e.keyCode === 33)
   {
     overview.Augustiner.total = Math.max(0,overview.Augustiner.total-1);
-    console.log(overview.Augustiner.total);
   }
   else if(e.keyCode === 34)
   {
     overview.Radler.total = Math.max(0,overview.Radler.total-1);;
   }
-  else if(e.keyCode === 35)
+  else if(e.keyCode === 167)
   {
     overview.Spezi.total = Math.max(0,overview.Spezi.total-1);;
   }
@@ -84,7 +83,7 @@ $(document).keypress(function(e){
   {
     overview.Snickers.total = Math.max(0,overview.Snickers.total-1);;
   }
-  else if(e.keyCode === 39)
+  else if(e.keyCode === 47)
   {
     overview.Twix.total = Math.max(0,overview.Twix.total-1);;
   }
