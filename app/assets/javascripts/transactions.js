@@ -98,7 +98,7 @@ $(document).keypress(function(e){
   for(element in overview)
   {
       if(overview[element].total)
-        $('#overview').append('<tr><td>' + element + '</td>' + '<td>' +overview[element].price.toFixed(2) + ' € x'  + overview[element].total  + '</td></tr>');
+        $('#overview').append('<tr><td>' + element + ':</td>' + '<td>' + overview[element].total + ' x ' + overview[element].price.toFixed(2) + ' €' + '</td></tr>');
   }
 
   var sum = 0;
